@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>sign up form</title>
+</head>
+<style>
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color:bisque;
+        border: 2px solid plum;
+        background-color: antiquewhite;
+        
+        
+    }
+    .box{
+        background-image: url(https://img.freepik.com/premium-vector/black-blue-neon-circles-abstract-tech-background-vector-corporate-design_88343-7718.jpg?w=740);
+        border:groove;
+        width: 40%;
+        padding: 10px 30px;
+        margin-top: 20px;
+    }
+    .signup{
+        text-align: center;
+        font-size: 30px;
+        font-weight:700px ;
+        font-style: oblique;
+    }
+    .border{
+        border-top: 2px solid rgb(255, 0, 179);
+        padding: 15px 0px;
+        
+    }
+    .New{
+        display: flex;
+        
+    }
+    .abc1{
+        width: 50%;
+    }
+    .anc2{
+        width: 50%;
+    }
+    input{
+        border: groove;
+        border-radius: 3px;
+        width: 100%;
+        height: 35px;
+       padding: 20px ;
+       margin: 10px 0px;
+    
+       
+    }
+    .value1{
+        margin-right: 20px;
+    }
+     .value2{
+     margin-left: 20px;
+     }
+     select{
+        border-radius: 6px;
+        border: groove;
+        height: 40px;
+        width: 100%;
+        margin: 8px 0px;
+        color:rgb(81, 148, 87);
+        
+        
+     }
+        .button  input{
+        
+     color: rgb(73, 134, 145);
+     font-size: 18px;
+     border-radius: 5px;
+     border: groove;
+     text-align: center;
+     align-items: center;
+         
+    }
+          
+     
+</style>
+<body>
+    <div class="box">
+        <div class="signup">Sign Up Form</div>
+        <div class="border"></div>
+        <form action="">
+            <div class="New">
+                <div class="abc1">
+                    <div>
+                        <label for="">First Name</label>
+                    </div>
+                    <div class="value1">
+                        <input type="text" name="1stname" id="" placeholder="first name">
+                    </div>
+
+                </div>
+                <div class="abc2 value2">
+                   <div>
+                    <label for="">Last Name</label>
+                   </div>
+                   <div>
+                    <input type="text" name="2ndname" id="" placeholder="Last name">
+                   </div>
+
+                </div>
+
+            </div>
+            <div>
+                <div class="email">
+                    <label for="email">Email</label>
+                </div>
+                <div>
+                    <input type="text" name="email" id="" placeholder="Enter your Email">
+                </div>
+            </div>
+            
+            <div class="set-flex">
+                <div class="abc1">
+                    <div>
+                        <label for="">Password</label>
+                    </div>
+                    <div class="value1">
+                        <input type="text" name="fname" id="" placeholder="Enter New password">
+                    </div>
+
+                </div>
+                <div class="abc2 value2">
+                   <div>
+                    <label for="">Confirm password</label>
+                   </div>
+                   <div>
+                    <input type="text" name="Newpassword" id="" placeholder="Confirm new password">
+                   </div>
+
+                </div>
+
+            </div>
+           
+            <div class="New">
+                <div class="abc1">
+                    <div>
+                        <label for="">Age</label>
+                    </div>
+                    <div class="abc1">
+                        <input type="text" name="exactage" id="" placeholder="age">
+                    </div>
+
+                </div>
+                <div class="abc value2">
+                   <div>
+                    <label for="">Date of Birth</label>
+                   </div>
+                   <div>
+                    <input type="date" name="Birth" id="" >
+                   </div>
+
+                </div>
+
+            </div>
+            <div class="New">
+                <div class="abc1">
+                    <div><label for="">Province</label>
+                    </div>
+                    <div class="value1">
+                        <select name="" id="">
+                            <option value="Fs">select province</option>
+                            <option value="kpk" >KPK</option>
+                            <option value="Sin" >Sindh</option>
+                            <option value="pu">Punjab</option>
+                            <option value="bl">Blochistan</option>
+
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            
+            
+                <div class="abc1">
+                    <div><label for="">City</label>
+                    </div>
+                    <div class="value2">
+                        <select name="" id="">
+                            <option value="guj" >select city</option>
+                            <option value="lhr" >Lahore</option>
+                            <option value="kr" >Karachi</option>
+                            <option value="guj">Gujranwala</option>
+                            <option value="ml">Multan</option>
+
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="New">
+                <div class="abc1">
+                    <div><label for="">Province</label>
+                    </div>
+                    <div class="value1">
+                        <select name="" id="">
+                            <option value="chi" >select Country</option>
+                            <option value="chi" >China</option>
+                            <option value="pak">Pakistan</option>
+                            <option value="swiz">switzerland</option>
+                            <option value="Eng">England</option>
+
+
+                        </select>
+
+                    </div>
+
+                </div>
+                <div class="abc2 value2">
+                    <div><label for="">Upload picture</label>
+                    </div>
+                    <select name="" id="">
+                        <option value="pu">select Picture</option>
+                        <option value="pk" >Pic 1</option>
+                        <option value="ind" >pic 2</option>
+
+                        
+                    </select>
+
+                </div>
+
+            </div>
+           
+                <div class="button">
+                    <input type="submit" value="Enter">
+                    <input type="button" value="sign in">
+                       
+                </div>
+                    
+                </div>
+            </div>
+        </form>
+
+    </div>
+</body>
+</html>
