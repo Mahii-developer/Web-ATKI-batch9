@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>marks = +prompt("Please enter your marks : ");
+    if (marks > 0 && marks <= 100) {
+      if (marks > 80) {
+        console.log("Grade : A");
+      } else if (marks > 70 && marks <= 80) {
+        console.log("Grade : B");
+      } else if (marks > 60 && marks <= 70) {
+        console.log("Grade : C");
+      } else if (marks >= 50 && marks <= 60) {
+        console.log("Grade : D");
+      } else if (marks < 50) {
+        console.log("Grade : Fail");
+      }
+    } else {
+      console.log("Please enter valid marks within the range of 0-100");
+    }
+    </script>
+    <script>
+        temp = +prompt("Please enter your temperature in celcius:");
+        cnst =1.8;
+        f = temp * cnst + 32 ;
+        console.log("Degree Celcius:${temp},Farenheit:${f}");
+        if (f >=98.6 && f <=90){
+            console.log("You have a normal temperature:");
+        } else if ( f > 99 && f <=101 ){
+            console.log(" You have a mild temperature");
+        } else if ( f> 101 && f<= 103){
+            console.log("You have a severe temperature");
+        }else {
+            console.log(" You should take rest");
+        }
+       
+    </script>
+    <script> 
+    // convert centimeter into meter
+        cent =+prompt("Please enter your value in centimeter:");
+        Meter = cent / 100;
+        console.log("Centimeter", cent);
+        console.log( "Meter" , Meter);
+              
+   
+       // convert  Us dollar to pkr 
+      dollar = +prompt("Please Enter your amount in dollar:")
+          dollar_to_pkr = 270;
+      pkr = dollar * dollar_to_pkr;
+
+       console.log("Dollars: ", dollar);
+     console.log("PKR Rupees: ", pkr);
+ 
+    // conevert Kuwaiti Dinar to pkr
+    dinar =+prompt("Please Enter your amount In kuwaiti dinar:");
+        kuwaiti_to_pkr =904;
+        pkr = dinar * kuwaiti_to_pkr;
+
+        console.log("kuwaiti dinar:", dinar);
+        console.log("PKR Rupees:", pkr);
+
+          // convert  meter_to_km
+          meter = +prompt("please enter your value in meter");
+        meter_to_km = 1000;
+       km = meter/1000;
+        console.log("Meters" ,meter);
+        console.log("KM: " ,km);
+
+        // convert celcius to farhenheit
+        d_celcuis = +prompt("Please enter temperature in degree celcius");
+      d_farhenheit = (d_celcuis)* 1.8 + 32;
+      console.log("Degree Celcius:", d_celcuis);
+      console.log("Degree Farhenheit:", d_farhenheit);
+
+   </script>
+</body>
+</html>
