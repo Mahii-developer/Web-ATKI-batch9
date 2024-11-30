@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.0/css/all.min.css"
+        integrity="sha512-9xKTRVabjVeZmc+GUW8GgSmcREDunMM+Dt/GrzchfN8tkwHizc5RP4Ok/MXFFy5rIjJjzhndFScTceq5e6GvVQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    body {
+        /* display: flex;
+        width: 1000px;
+        height: 1000px;
+        justify-content: center;
+        align-items: center;
+         */
+    }
+
+    .project-list {
+        border: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: beige;
+        flex-wrap: wrap;
+
+    }
+
+    .project-item {
+        width: 180px;
+        /* height: 200px; */
+        margin: 5px;
+        background-color: white;
+        justify-content: center;
+        align-items: center;
+        border: 2px groove brown;
+        display: flex;
+        position: relative;
+
+    }
+
+    .project-item img {
+
+        width: 180px;
+        height: 200px;
+
+    }
+
+    .project-item h2 {
+        color: brown;
+        font-size: 18px;
+        text-align: center;
+        font-weight: bold;
+        margin: 20px;
+        margin-bottom: 10%;
+
+    }
+
+    .project-item h4 {
+        font-size: 70%;
+        font-weight: bold;
+        text-align: center;
+        color: brown;
+        margin-top: 5px;
+
+
+    }
+
+    .project-item .icon {
+        display: flex;
+        bottom: 90px;
+        right: 200px;
+        position: absolute;
+
+    }
+
+    .project-item a {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 0%;
+
+    }
+
+    .icon i {
+        padding: 16px 0px 0px 4px;
+        width: 10%;
+        height: 10%;
+
+    }
+
+    .project-item .icon2 {
+        display: flex;
+        bottom: 90px;
+        right: 40px;
+        position: absolute;
+
+
+    }
+
+    .project-item .icon2 a {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+
+    }
+
+    .icon2 i {
+        padding: 16px 0px 0px 4px;
+
+    }
+
+    .project-item .icon3 {
+        bottom: 90px;
+        right: 40px;
+        display: flex;
+        position: absolute;
+
+
+    }
+
+    .project-item .icon3 a {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+
+
+    }
+
+    .icon3 i {
+        padding: 16px 0px 0px 4px;
+    }
+
+    .project-item .icon4 {
+        bottom: 30px;
+        right: 40px;
+        display: flex;
+        position: absolute;
+
+
+    }
+
+    .project-item .icon4 a {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0%;
+
+    }
+
+    .icon4 i {
+        padding: 16px 0px 0px 4px;
+    }
+
+    .project-item .icon5 {
+        bottom: 30px;
+        right: 40px;
+        display: flex;
+        position: absolute;
+
+
+    }
+
+    .project-item .icon5 a {
+        margin-right: 5px;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 0%;
+
+    }
+
+    .icon5 i {
+        padding: 16px 0px 0px 4px;
+    }
+
+    table {
+
+        border-collapse: collapse;
+        width: 45%;
+
+    }
+
+    .new {
+        justify-items: center;
+        align-items: center;
+    }
+
+    td {
+        border-bottom: 1px solid black;
+        padding: 10px 10px;
+
+    }
+
+    th {
+        border-bottom: 1px solid black;
+        padding: 20px 10px;
+        text-align: left;
+    }
+
+    .abc {
+        align-items: center;
+
+    }
+
+    .parent {
+        align-items: center;
+        display: flex;
+
+    }
+
+    .abc {
+        /* background-color: purple; */
+        background: rgb(2, 0, 36);
+        background: linear-gradient(197deg,
+                rgb(36, 0, 9) 0%,
+                rgb(121, 9, 106) 35%,
+                rgb(255, 0, 106) 100%);
+        color: white;
+        font-size: 24px;
+    }
+
+    tr:hover {
+        background-color: olivedrab;
+    }
+
+
+    .parent img {
+        width: 25px;
+        margin-right: 10px;
+    }
+</style>
+
+<body>
+
+
+    <div class="project-list">
+        <div class="project-item">
+            <img src="https://media.istockphoto.com/id/2058319417/photo/face-business-and-woman-with-arms-crossed-smile-and-career-with-teamwork-meeting-or-planning.webp?a=1&b=1&s=612x612&w=0&k=20&c=jtF4U4Ky4FiG9gDumodMGVxXmRYGQUwkTpaUEwiPqBg="
+                alt="" />
+            <h2>General Manager</h2>
+            <h4>Designation</h4>
+            <div class="icon">
+                <a href=""><i class="fa-brands fa-facebook fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-Instagram fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+            </div>
+        </div>
+         <div class="project-item">
+            <img src="https://media.istockphoto.com/id/1294703794/photo/woman-playing-chess.webp?a=1&b=1&s=612x612&w=0&k=20&c=XCJN2gZtSCODwsU1WBgDuMR5VM3YVseSw806Y6Z-5lE="
+                alt="">
+            <h2>General Manager</h2>
+            <h4>Designation</h4>
+            <div class="icon2">
+                <a href=""><i class="fa-brands fa-facebook fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-Instagram fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+            </div>
+
+        </div>
+
+        <div class="project-item">
+            <img src="https://media.istockphoto.com/id/1095010754/photo/young-business-woman.jpg?s=612x612&w=0&k=20&c=ecN0GsUU4MPlWUDFofmQJZtjiy8mPfwmogJ_sXd6zM0="
+                alt="">
+            <h2>General Manager</h2>
+            <h4>Designation</h4>
+            <div class="icon3">
+                <a href=""><i class="fa-brands fa-facebook fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-Instagram fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+            </div>
+
+
+        </div>
+        <div class="project-item">
+            <img src="https://media.istockphoto.com/id/1763218292/photo/portrait-of-modern-businesswoman.jpg?s=612x612&w=0&k=20&c=wbb_nhWkysurRXMXfTno1gihqaFHiQDjiApwuVnB9G4="
+                alt="">
+            <h2>Custom Manager</h2>
+            <h4>Designation</h4>
+            <div class="icon4">
+                <a href=""><i class="fa-brands fa-facebook fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-Instagram fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+            </div>
+
+
+
+        </div>
+        <div class="project-item">
+            <img src="https://media.istockphoto.com/id/2163214508/photo/confident-blonde-businesswoman-leading-team-in-modern-office-setting.jpg?s=612x612&w=0&k=20&c=WG9gjpx9oAx6pdlCNOcNTMTEwZ3YWsxobmS3DRUgHXQ="
+                alt="">
+            <h2>General Manager</h2>
+            <h4>Designation</h4>
+            <div class="icon5">
+                <a href=""><i class="fa-brands fa-facebook fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-twitter fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+                <a href=""><i class="fa-brands fa-Instagram fa-xl" style="color:rgba(165, 93, 42, 0.938);"></i></a>
+            </div>
+
+
+        </div> -->
+    </div>
+
+     </div> -->
+     <table class="new">
+
+        <thead>
+            <tr>
+                <th>POS</th>
+                <th> TEAM</th>
+                <th> MATCHES</th>
+                <th> POINTS</th>
+                <th>RATING</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            <tr class="abc">
+                <td> 1</td>
+                <td>
+                    <div class="parent"><img
+                            src="https://flagdownload.com/wp-content/uploads/Flag_of_Australia_Flat_Round-128x128.png"
+                            alt="" />
+                        <spain>Australia</spain>
+                </td>
+                </div>
+                <td> 23</td>
+                <td> 2,174</td>
+                <td> 118</td>
+
+            </tr>
+            <tr>
+                <td> 2</td>
+                <td>
+                    <div class="parent"><img
+                            src=" https://flagdownload.com/wp-content/uploads/Flag_of_Pakistan_Flat_Round-128x128.png"
+                            alt="" />
+                        <spain>Pakistan</spain>
+                </td>
+                <td> 29</td>
+                <td> 2,097</td>
+                <td> 116</td>
+
+            </tr>
+            <tr>
+                <td> 3</td>
+                <td>
+                    <div class="parent"><img
+                            src="https://flagdownload.com/wp-content/uploads/Flag_of_India_Flat_Round-128x128.png"
+                            alt="" />
+                        <spain>India</spain>
+                </td>
+                <td> 21</td>
+                <td> 2,000</td>
+                <td> 101</td>
+
+            </tr>
+
+            <tr>
+                <td> 4</td>
+                <td>
+                    <div class="parent"><img
+                            src=" https://flagdownload.com/wp-content/uploads/Flag_of_New_Zealand_Flat_Round-128x128.png"
+                            alt="" />
+                        <spain> New Zealand</spain>
+                </td>
+                <td> 20</td>
+                <td> 1,987</td>
+                <td> 106</td>
+
+            </tr>
+            <tr>
+                <td> 5</td>
+                <td>
+                    <div class="parent"><img
+                            src="https://flagdownload.com/wp-content/uploads/Flag_of_England_Flat_Round-128x128.png"
+                            alt="" />
+                        <spain>England</spain>
+                </td>
+                <td> 19</td>
+                <td> 1,890</td>
+                <td> 101</td>
+
+            </tr>
+
+            <tr>
+                <td> 6</td>
+                <td>
+                    <div class="parent"><img
+                            src="https://flagdownload.com/wp-content/uploads/Flag_of_South_Africa_Flat_Round-128x128.png"
+                            alt="" />
+                        <spain>South Africa</spain>
+                </td>
+                <td> 17</td>
+                <td> 1,297</td>
+                <td> 93</td>
+
+            </tr>
+
+            <tr>
+                <td> 7</td>
+                <td>
+                    <div class="parent"><img
+                            src="https://flagdownload.com/wp-content/uploads/Flag_of_Bangladesh_Flat_Round-128x128.png"
+                            alt="" />
+                        <spain>Bangladesh</spain>
+                </td>
+                <td> 15</td>
+                <td> 1,097</td>
+                <td> 91</td>
+
+            </tr>
+
+            <tr>
+                <td> 8</td>
+                <td>
+                    <div class="parent"><img
+                            src="https://flagdownload.com/wp-content/uploads/Flag_of_Afghanistan_Flat_Round-128x128.png"
+                            alt="" />
+                        <spain>Afganistan</spain>
+                </td>
+                <td> 19</td>
+                <td> 1,097</td>
+                <td> 84</td>
+
+            </tr>
+
+
+
+        </tbody>
+    </table> -->
+</body>
+
+</html>
