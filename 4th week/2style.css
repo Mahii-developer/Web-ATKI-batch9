@@ -1,0 +1,46 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: white;
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 10px;
+
+}
+.cards{
+    background-color: grey;
+    height: 460px;
+    width: 250px;
+    border-radius: 7px;
+    margin: 7px;
+    box-shadow: 35 ;
+    
+   }
+.image{
+    padding: 5px 5px;
+}
+.image img{
+
+    border-radius: 7px;
+}
+.content{
+    padding:6px;
+    margin: 3px;
+}
+.content p{
+    font-size: 13px;
+}
+.content ul li{
+    text-align: center;
+}
+.button{
+    text-align: center;
+}
+.button button{
+    border-radius: 7px;
+    padding: 0px 7px 0px 7px;
+    background-color: aliceblue;
+    color: rgb(119, 0, 255);
+    text-shadow: 2px 2px 4px;}
